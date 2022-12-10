@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  /* background: var(--b-grey); */
+  color: #fff;
+}
+body {
+  background: var(--b-grey);
+  padding: 1rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --b-green: rgb(0, 152, 111);
+  --b-grey: rgb(29, 32, 38);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Hero section  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8%;
+}
+.header i {
+  cursor: pointer;
+}
+.header .options {
+  display: none;
+  transition: all 0.5s;
+}
+
+.active-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  background: var(--b-grey);
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  padding-bottom: 10rem; /*change this if needed*/
+  transition: all 0.5s;
+}
+.active-options ul li {
+  margin: 1rem;
+}
+.header div {
+  display: flex;
+  align-items: center;
+}
+.header span {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.logo {
+  width: 100px;
+}
+/* 
+.header ul {
+  flex: 1;
+  text-align: right;
+}
+.header ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+ */
+a:hover {
+  color: var(--b-green);
+  transition: color 0.5s;
+}
+
+/* Info section */
+.info {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.info img {
+  width: 500px;
+}
+.info div {
+  margin-left: 0.5rem;
+}
+.info div h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/* Product section */
+.card {
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  background: var(--b-green);
+}
+.card span {
+  margin: 0.5rem;
+  text-align: center;
+}
+.card img {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+}
+.card p {
+  margin: 0.5rem;
+}
+
+.product-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-rows: 1; */
+  gap: 1rem;
+  height: 360px;
+  max-width: 1085px;
+  overflow: auto;
+}
+
+.Products {
+}
+
+/* FAQ section */
+.faq-card {
+  margin: 0.75rem 0;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  display: block;
+  line-height: 3rem;
+  height: 4.5rem;
+  overflow: hidden;
+}
+.active-faq {
+  height: auto;
+  transition: all 0.5s;
+  border: 1px solid rgb(124, 246, 10);
+}
+
+/* Rest decoration */
+.section-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.location {
+  margin: 1rem;
+}
+.social-media {
+  margin-top: 1.5rem;
+}
+.theme-button {
+  width: 54px;
+  height: 30px;
+  background: #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  transition: all 0.5s;
+}
+.theme-button span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 3px;
+  background: #999;
+  transition: all 0.5s;
+}
+.active {
+  background: #00986f;
+  transition: all 0.5s;
+}
+.toggle-theme {
+  margin-left: 26px;
+  background: #fff;
+  transition: all 0.5s;
+}
+.scroll {
+  color: rgb(238, 130, 36);
+}
+
+/* Media queries */
+@media (max-width: 982px) {
+  .header {
+    padding: 0;
+  }
+  .header div span {
+    font-size: 1.25rem;
+  }
+  .info {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .info img {
+    width: 90%;
+  }
+  .info div h1 {
+    font-size: 2rem;
+  }
+}

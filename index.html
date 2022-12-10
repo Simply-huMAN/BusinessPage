@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Name</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Hero section -->
+      <div class="hero">
+        <div class="header">
+          <div>
+            <img src="./images/b-logo.png" alt="Business logo" class="logo" />
+            <span>Business Name</span>
+          </div>
+          <i class="fa-solid fa-bars" id="opt" onclick="toggleOptions()"></i>
+
+          <!-- implementing mobile first design-->
+          <div class="options" id="option">
+            <ul>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Products">Products</a></li>
+              <li><a href="#Pricing">Pricing</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <button
+              type="button"
+              id="btn"
+              class="theme-button"
+              title="switch to change website theme"
+              onclick="toggleBtn()"
+            >
+              <span id="spn"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info section -->
+      <div class="info">
+        <img src="./images/confused1.png" alt="sample image" />
+        <div>
+          <h1>Business Need</h1>
+          <p>We at Business, solve all your problems in one go.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Est nisi in numquam amet saepe itaque, accusamus
+          </p>
+        </div>
+      </div>
+
+      <!-- Information section -->
+      <section>
+        <p>
+          We are the Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Eum cumque quam inventore eaque consequuntur dignissimos, mollitia,
+          aliquid fugiat laborum illo tempora quibusdam ab, enim error. Beatae
+          soluta velit veniam expedita.
+        </p>
+      </section>
+
+      <!-- Demo video and gallery -->
+      <!--
+      <section>
+        <p class="section-name">Gallery</p>
+        <iframe
+          style="width: 100%; height: 45vh"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+        ></iframe>
+      </section>
+      -->
+      <!-- Products section -->
+      <section class="Products">
+        <a name="Products" class="section-name">Products</a>
+        <div class="product-grid">
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/demo.jpg" alt="image here" />
+            <span>Name A</span>
+            <p>
+              Demo 1 about the product and other details of the product are
+              shown here
+            </p>
+          </div>
+        </div>
+        <p class="scroll">Scroll right to see more of our products</p>
+        <p>
+          All our products are designed to solve your problems quickly and with
+          less cost.
+        </p>
+      </section>
+
+      <!-- Pricing section  -->
+      <section class="Pricing">
+        <a name="Pricing" class="section-name">Pricing</a>
+        <div class="product-grid"></div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="faq">
+        <p class="section-name">FAQ</p>
+        <div class="questions">
+          <div class="faq-card" onclick="answer_faq(0)">
+            <p>
+              How can you contact us? &nbsp;
+              <i class="fa-solid fa-caret-down fa-2x"></i>
+            </p>
+            <p class="answer">
+              You can reach us out at different social media platforms or direct
+              mail us at <a href="mailto:malothaditya006@gmail.com">here</a>
+            </p>
+          </div>
+          <div class="faq-card" onclick="answer_faq(1)">
+            <p>
+              How can you contact us? &nbsp;
+              <i class="fa-solid fa-caret-down fa-2x"></i>
+            </p>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              laudantium quae consectetur? Maiores, tempore. Sequi iste a enim!
+              Eaque veniam molestiae ipsum architecto, sit quidem. Eos iure
+              incidunt quaerat soluta.
+            </p>
+          </div>
+          <div class="faq-card" onclick="answer_faq(2)">
+            <p>
+              How can you contact us? &nbsp;
+              <i class="fa-solid fa-caret-down fa-2x"></i>
+            </p>
+            <p class="answer">
+              You can reach us out at different social media platforms or direct
+              mail us at <a href="mailto:malothaditya006@gmail.com">here</a>
+            </p>
+          </div>
+          <div class="faq-card" onclick="answer_faq(3)">
+            <p>
+              How can you contact us? &nbsp;
+              <i class="fa-solid fa-caret-down fa-2x"></i>
+            </p>
+            <p class="answer">
+              You can reach us out at different social media platforms or direct
+              mail us at <a href="mailto:malothaditya006@gmail.com">here</a>
+            </p>
+          </div>
+          <div class="faq-card" onclick="answer_faq(4)">
+            <p>
+              How can you contact us? &nbsp;
+              <i class="fa-solid fa-caret-down fa-2x"></i>
+            </p>
+            <p class="answer">
+              You can reach us out at different social media platforms or direct
+              mail us at <a href="mailto:malothaditya006@gmail.com">here</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section  -->
+      <section class="Footer">
+        <a name="Contact" class="section-name"></a>
+        <div class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.8800628103!2d78.26796120175523!3d17.412627412614803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1670663190689!5m2!1sen!2sin"
+            style="border: 0; border-radius: 0.75rem; width: 100%; height: 40vh"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div>
+          <span class="section-name">Business Name &copy;</span>
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+91&nbsp;8500833427
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>&nbsp;
+              <a href="mailto:malothaditya006@gmail.com"
+                >malothaditya006@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i
+              >&nbsp;&nbsp;&nbsp;Hyderabad, Telangana &nbsp; 503187
+            </li>
+            <li class="social-media">
+              <!-- social media -->
+              <a href="https://www.facebook.com/login/"
+                ><i class="fa-brands fa-facebook fa-2x"></i></a
+              >&nbsp;&nbsp;&nbsp;
+              <a href="http://wa.me/8500833427"
+                ><i class="fa-brands fa-whatsapp fa-2x"></i></a
+              >&nbsp;&nbsp;&nbsp;
+              <a href="https://www.instagram.com/accounts/login/"
+                ><i class="fa-brands fa-instagram fa-2x"></i></a
+              >&nbsp;&nbsp;&nbsp;
+              <a href=""><i class="fa-solid fa-earth-asia fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/83b63af0da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
