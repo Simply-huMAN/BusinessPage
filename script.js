@@ -33,3 +33,23 @@ function toggleOptions() {
     val = false;
   }
 }
+var locate_btn = document.getElementById("locate-btn");
+var location_map = document.getElementById("map");
+value = false;
+function showLocation() {
+  if (!value) {
+    location_map.classList.remove("locate-off");
+    location_map.classList.add("locate-on");
+    locate_btn.innerHTML = "Hide Location";
+    locate_btn.style.background = "var(--b-l-green)";
+    locate_btn.style.transition = "all 0.5s";
+    value = true;
+  } else {
+    location_map.classList.remove("locate-on");
+    location_map.classList.add("locate-off");
+    locate_btn.innerHTML = "Show Location";
+    locate_btn.style.background = "var(--b-green)";
+    locate_btn.style.transition = "all 0.5s";
+    value = false;
+  }
+}
