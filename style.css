@@ -167,7 +167,7 @@ a:hover {
 .location {
   margin: 1rem;
 }
-#locate-btn {
+.locate-btn-style {
   margin: 1rem auto;
   width: 50%;
   display: flex;
