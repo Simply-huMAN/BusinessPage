@@ -7,15 +7,16 @@ function toggleBtn() {
 }
 
 var faq = document.getElementsByClassName("faq-card");
+var ans = document.getElementsByClassName("answer");
 
 function answer_faq(num) {
   var Faq = faq[num];
+  var Ans = ans[num];
   Faq.classList.toggle("active-faq");
 }
 
 var opt = document.getElementById("opt");
 var option = document.getElementById("option");
-var opt1 = document.getElementById("opt1");
 val = false;
 function toggleOptions() {
   if (!val) {
