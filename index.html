@@ -26,6 +26,16 @@
               <li><a href="#Pricing">Pricing</a></li>
               <li><a href="#Contact">Contact</a></li>
             </ul>
+            <!--
+            <button
+              type="button"
+              id="btn"
+              class="theme-button"
+              title="switch to change website theme"
+              onclick="toggleBtn()">
+              <span id="spn"></span> 
+            </button>
+            -->
           </div>
         </div>
       </div>
@@ -203,6 +213,79 @@
           </div>
         </div>
       </section>
+
+      <!-- Write to us section -->
+      <section class="write">
+        <p>
+          If you have any query or complaint, please write it to us
+          <span class="write-here" id="write-to-us" onclick="write_to_us()"
+            >here</span
+          >
+        </p>
+        <div class="write-section">
+          <form id="contact-form" class="contact-form-style toggle-form">
+            <input type="hidden" name="contact_number" />
+            <div>
+              <label>Name</label><br />
+              <input
+                class="input-style"
+                type="text"
+                name="user_name"
+                id="user_name"
+                placeholder="swami vivekanda"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label>Email</label><br />
+              <input
+                class="input-style"
+                type="email"
+                name="user_email"
+                id="user_email"
+                placeholder="swami108@mymail.com"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label>Message Type</label><br />
+              <select
+                class="input-style"
+                name="user_message_type"
+                id="user_message_type"
+                required
+              >
+                <option class="input-style" value="feedback">Feedback</option>
+                <option class="input-style" value="advice">Advice</option>
+                <option class="input-style" value="complaint">Complaint</option>
+                <option class="input-style" value="donate">Donate</option>
+                <option class="input-style" value="collaborate">
+                  Collaborate
+                </option>
+              </select>
+            </div>
+            <br />
+            <div>
+              <label>Message</label><br />
+              <textarea
+                class="input-message"
+                name="user_message"
+                id="user_message"
+                placeholder="my message here....."
+                required
+              ></textarea>
+            </div>
+            <br />
+            <input
+              type="submit"
+              value="Send"
+              class="input-style submit-button-style"
+            />
+          </form>
+        </div>
+      </section>
       <!-- Contact section  -->
       <section class="Footer">
         <a name="Contact" class="section-name"></a>
@@ -271,6 +354,38 @@
       src="https://kit.fontawesome.com/83b63af0da.js"
       crossorigin="anonymous"
     ></script>
+    <!-- emailjs start-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("7MYOcnk-fUrh7CZ1v");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("Adi_mail", "sample_1", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+    <!-- emailjs end -->
     <script src="./script.js"></script>
   </body>
 </html>
