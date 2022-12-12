@@ -1,3 +1,4 @@
+// Javascript File
 var btn = document.getElementById("btn");
 var spn = document.getElementById("spn");
 
