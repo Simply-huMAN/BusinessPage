@@ -1,4 +1,3 @@
-// Javascript File
 var btn = document.getElementById("btn");
 var spn = document.getElementById("spn");
 
@@ -53,4 +52,10 @@ function showLocation() {
     locate_btn.style.transition = "all 0.5s";
     value = false;
   }
+}
+
+var write = document.getElementById("write-to-us");
+var form = document.getElementById("contact-form");
+function write_to_us() {
+  form.classList.toggle("toggle-form");
 }
