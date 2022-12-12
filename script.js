@@ -59,3 +59,6 @@ var form = document.getElementById("contact-form");
 function write_to_us() {
   form.classList.toggle("toggle-form");
 }
+function success_alert() {
+  alert("Message sent successfully");
+}
