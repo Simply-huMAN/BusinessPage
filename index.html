@@ -54,6 +54,7 @@
       </section>
 
       <!-- Demo video and gallery -->
+      
       <section>
         <p class="section-name">Gallery</p>
         <iframe
@@ -212,7 +213,11 @@
           >
         </p>
         <div class="write-section">
-          <form id="contact-form" class="contact-form-style toggle-form">
+          <form
+            id="contact-form"
+            class="contact-form-style toggle-form"
+            onsubmit="success_alert()"
+          >
             <input type="hidden" name="contact_number" />
             <div>
               <label>Name</label><br />
